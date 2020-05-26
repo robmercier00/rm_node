@@ -1,0 +1,83 @@
+mixin addl-experience
+  .modules
+    a(class='modules-left', id='show-additional' onclick='toggleAddlExperience(this)')
+      | Show additional experience
+    script.
+      function toggleAddlExperience(elem) {
+        var x = document.getElementById('extra-experience');
+        if (x.style.display === 'block') {
+          x.style.display = 'none';
+          elem.innerHTML = 'Show additional experience';
+        } else {
+          x.style.display = 'block';
+          elem.innerHTML = 'Hide additional experience';
+        }
+      }
+  .modules#extra-experience
+    .modules-left
+      | Additional
+      br
+      | Experience
+    .modules-right
+      p
+        span.jobtitle Associate Manager of Lead Generation Programs
+        span.company Ziff Davis Enterprise
+        br
+        span.dates April 2008 – December 2010
+        span.location Topsfield, MA
+        .explist
+          ul
+            li(class='subspecs') Lead Generation
+              ul
+                li Created & edited content for business-to-business marketing newsletters
+                li Created & edited HTML & text templates for newsletters
+                li Designed newsletter/Website functionality that immediately increased lead conversions by 50%
+            li(class='subspecs') E-mail Marketing
+              ul
+                li Implemented global redesign of all Web Buyer's Guide newsletters
+                li Created new design for 4 additional Web Buyer's Guide newsletters
+                li Improved IP sender reputation for Web Buyer's Guide brand newsletters to an average of 95%
+                li Maintained exceptionally low spam/abuse complaint levels for Web Buyer's Guide newsletters
+            li(class='subspecs') Social Media
+              ul
+                li Increased Web Buyer's Guide Twitter followers by approximately 32% per month
+                li Implemented plan to increase Web Buyer's Guide presence across various social media networks
+                li Implemented social media marketing along with newsletter marketing initiatives
+                li Utilized various tracking and social marketing tools to further Web Buyer's Guide lead generation and demand generation initiatives
+      p
+        span.jobtitle Owner, Instructor
+        span.company All4Strings
+        br
+        span.dates January 2003 – April 2008
+        span.location Woburn, MA
+        .explist
+          ul
+            li Instruct students in electric and acoustic guitar, music theory, audio recording
+            li Provide sound reinforcement for a number of bands and/or live music venues
+            li Provide audio recording for a number of bands
+            li Responsible for all business activities, including marketing, invoicing, accounting, Website design and maintenance
+            li Provide a yearly student recital, including booking the recital hall, providing all sound reinforcement equipment and services and setting up post-recital reception
+      p
+        span.jobtitle Live Sound Engineer
+        span.company Skybar
+        br
+        span.dates March 2006 – September 2007
+        span.location Somerville, MA
+      p
+        span.jobtitle Assistant Manager
+        span.company FYE
+        br
+        span.dates November 2005 – April 2006
+        span.location Medford, MA
+      p
+        span.jobtitle Head Technician
+        span.company Alactronics
+        br
+        span.dates September 2000 – December 2002
+        span.location Wellesley, MA
+      p
+        span.jobtitle Assistant Manager
+        span.company Record Town/Tape World
+        br
+        span.dates May 1994 – September 1999
+        span.location Nashua, NH
